@@ -38,18 +38,39 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int rfib (int n){
+//     if(n<=1)
+//         return n;
+//     return rfib(n-2) + rfib(n-1);
+// }
+// int main()
+// {
+//     int n;
+//     cout<<"enter value of n: ";
+//     cin>>n;
+//     cout <<rfib(n)<< " ans here"<<endl;
+//     return 0;
+// }
 
-#include<iostream>
-
+#include <iostream>
 using namespace std;
 
-int main()
-{
-    double j=11;
-    
-    double *p= &j;
-    cout <<sizeof(p)<<endl;
-    
-   
-    return 0;
+void print(int n){
+    cout<<"hlo";
+    if(n < 0){
+        return;
+    }
+    if(n == 0){
+        cout << n << " ";
+        return;
+    }
+    print(n --);
+    cout << n << " ";
+}
+
+int main() {
+    int num = 3;
+    print(num);
 }
