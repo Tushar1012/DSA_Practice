@@ -1,39 +1,19 @@
-// #include<iostream>
-// using namespace std;
-// int  j(int i,int n){
-//     //Base case
-//     if(i>n)
-//     return ;
-//     cout<<"Tushar";
-//     return j(i+1,n);
-
-// }
-
-// int main()
-// {
-//     int n;
-//     cout<<"entrer n";
-//    // cin>>n;
-//     cout<<j(1,5);
-//     //cout <<hlo;
-//     return 0;
-// }
-
+//print from 1 to n
 #include<iostream>
 
 using namespace std;
-void helo(int i,int n){
+void print(int i,int n){
     if(i>n)
     return ;
-    cout<<'HLo';
-    int nice=helo(i+1,n);
-    return nice;
+   // cout<<'HLo';
+    print(i+1,n);
+   cout<<i<<" ";
 }
 
 int main()
 {
     int i;
     int n=5;
-    cout<<helo(i,n);
+    print(1,n);
     return 0;
 }
